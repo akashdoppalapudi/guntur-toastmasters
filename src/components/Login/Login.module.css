@@ -1,0 +1,29 @@
+.formContainer {
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.button {
+	padding: 1.5% 10% 1.5% 10%;
+}
+
+.Form {
+	width: 99%;
+}
+
+.userInput {
+	text-align: center;
+}
+
+.Login {
+	margin-top: 15%;
+}
+
+@media only screen and (max-width: 780px) {
+	.Login {
+		margin-top: 40%;
+	}
+}
