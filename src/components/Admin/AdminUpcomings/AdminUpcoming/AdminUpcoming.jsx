@@ -22,16 +22,24 @@ const AdminUpcoming = ({ upcoming, setCurrentUpcomingId }) => {
 				<Card.Subtitle>Date: {upcoming.date}</Card.Subtitle>
 				<Card.Text>{upcoming.description}</Card.Text>
 				<div className={cardStyles.CardLinks}>
-					<a
-						href={upcoming.agendaLink}
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						Agenda Link
-					</a>
-					<a href={upcoming.meetLink} target="_blank" rel="noreferrer noopener">
-						Meet Link
-					</a>
+					{upcoming.agendaLInk && (
+						<a
+							href={upcoming.agendaLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							Agenda Link
+						</a>
+					)}
+					{upcoming.meetLink && (
+						<a
+							href={upcoming.meetLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							Meet Link
+						</a>
+					)}
 				</div>
 				<div className={cardStyles.CardLinks}>
 					<Button

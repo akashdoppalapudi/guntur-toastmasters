@@ -22,19 +22,29 @@ const AdminArchive = ({ archive, setCurrentArchiveId }) => {
 				<Card.Subtitle>Date: {archive.date}</Card.Subtitle>
 				<Card.Text>{archive.description}</Card.Text>
 				<div className={cardStyles.CardLinks}>
-					<a href={archive.MOMLink} target="_blank" rel="noreferrer noopener">
-						MOM Link
-					</a>
-					<a
-						href={archive.agendaLink}
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						More Link
-					</a>
-					<a href={archive.videoLink} target="_blank" rel="noreferrer noopener">
-						Video Link
-					</a>
+					{archive.MOMLink && (
+						<a href={archive.MOMLink} target="_blank" rel="noreferrer noopener">
+							MOM Link
+						</a>
+					)}
+					{archive.agendaLink && (
+						<a
+							href={archive.agendaLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							More Link
+						</a>
+					)}
+					{archive.videoLink && (
+						<a
+							href={archive.videoLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							Video Link
+						</a>
+					)}
 				</div>
 				<div className={cardStyles.CardLinks}>
 					<Button

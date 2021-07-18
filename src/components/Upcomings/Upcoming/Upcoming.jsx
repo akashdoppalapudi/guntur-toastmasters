@@ -19,16 +19,24 @@ const Upcoming = ({ upcoming }) => {
 				<Card.Subtitle>Date: {upcoming.date}</Card.Subtitle>
 				<Card.Text>{upcoming.description}</Card.Text>
 				<div className={cardStyles.CardLinks}>
-					<a
-						href={upcoming.agendaLink}
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						<Button variant="primary">Agenda Doc</Button>
-					</a>
-					<a href={upcoming.meetLink} target="_blank" rel="noreferrer noopener">
-						<Button variant="primary">Meet Here</Button>
-					</a>
+					{upcoming.agendaLink && (
+						<a
+							href={upcoming.agendaLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							<Button variant="primary">Agenda Doc</Button>
+						</a>
+					)}
+					{upcoming.meetLink && (
+						<a
+							href={upcoming.meetLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							<Button variant="primary">Meet Here</Button>
+						</a>
+					)}
 				</div>
 			</Card.Body>
 		</Card>

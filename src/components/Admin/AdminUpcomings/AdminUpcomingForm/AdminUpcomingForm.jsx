@@ -90,7 +90,7 @@ const AdminUpcomingForm = ({ currentUpcomingId, setCurrentUpcomingId }) => {
 						type="url"
 						placeholder="Link to Agenda Document"
 						value={upcomingData.agendaLink}
-						required={true}
+						required={false}
 						onChange={(e) =>
 							setUpcomingData({ ...upcomingData, agendaLink: e.target.value })
 						}
@@ -101,7 +101,7 @@ const AdminUpcomingForm = ({ currentUpcomingId, setCurrentUpcomingId }) => {
 						type="url"
 						placeholder="Link to Meeting"
 						value={upcomingData.meetLink}
-						required={true}
+						required={false}
 						onChange={(e) =>
 							setUpcomingData({ ...upcomingData, meetLink: e.target.value })
 						}
