@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://guntur-toastmasters-api.herokuapp.com/upcomings";
+const url = "https://guntur-toastmasters-api.herokuapp.com/upcomings";
 
 export const fetchUpcomings = () =>
 	axios.get(url, { headers: { "Access-Control-Allow-Origin": "*" } });
