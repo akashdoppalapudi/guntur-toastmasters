@@ -1,0 +1,47 @@
+.content {
+	background: rgba(169, 178, 177, 0.5);
+	padding: 2%;
+	border-radius: 10px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.contentText {
+	padding-top: 2%;
+	width: 100%;
+}
+
+.contentTitle {
+	font-size: 400%;
+	color: #004165;
+	font-family: "Dejavu Sans";
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+}
+
+.contentContainer {
+	margin-top: 12%;
+	padding: 0;
+}
+
+.socialMedia {
+	margin-top: 7%;
+}
+
+.socialMediaLinks {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.exploreButton {
+	background: #772432;
+	border: 1px solid #772432;
+	padding: 1.5% 2%;
+}
+
+@media only screen and (max-width: 780px) {
+	.contentContainer {
+		margin-top: 45%;
+	}
+}

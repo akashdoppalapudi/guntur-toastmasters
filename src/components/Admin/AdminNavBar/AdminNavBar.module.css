@@ -1,0 +1,10 @@
+.buttonsContainer {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+}
+
+.AdminNavBar {
+	margin-bottom: 2%;
+}

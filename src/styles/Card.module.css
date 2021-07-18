@@ -1,0 +1,19 @@
+.Card {
+	text-align: center;
+	margin-top: 5%;
+	background: #ffffff;
+	box-shadow: -7px 7px 14px #b5b5b5, 7px -7px 14px #ffffff;
+}
+
+.CardImg {
+	height: 250px;
+	object-fit: cover;
+}
+
+.CardLinks {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
