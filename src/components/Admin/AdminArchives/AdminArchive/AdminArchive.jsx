@@ -30,7 +30,7 @@ const AdminArchive = ({ archive, setCurrentArchiveId }) => {
 						target="_blank"
 						rel="noreferrer noopener"
 					>
-						Agenda Link
+						More Link
 					</a>
 					<a href={archive.videoLink} target="_blank" rel="noreferrer noopener">
 						Video Link

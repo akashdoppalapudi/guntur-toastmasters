@@ -101,7 +101,7 @@ const AdminArchiveForm = ({ currentArchiveId, setCurrentArchiveId }) => {
 				<Form.Group className="mb-3" controlId="basicFormLink">
 					<Form.Control
 						type="url"
-						placeholder="Link to Agenda Document"
+						placeholder="Link to More"
 						value={archiveData.agendaLink}
 						required={true}
 						onChange={(e) =>

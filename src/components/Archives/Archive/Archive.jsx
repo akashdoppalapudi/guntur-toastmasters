@@ -27,7 +27,7 @@ const Archive = ({ archive }) => {
 						target="_blank"
 						rel="noreferrer noopener"
 					>
-						<Button variant="primary">Agenda Doc</Button>
+						<Button variant="primary">More</Button>
 					</a>
 					<a href={archive.videoLink} target="_blank" rel="noreferrer noopener">
 						<Button variant="primary">Watch</Button>
