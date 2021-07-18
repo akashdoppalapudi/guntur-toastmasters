@@ -10,8 +10,8 @@ const Home = () => {
 				<Col sm={6} className={styles.content}>
 					<h1 className={styles.contentTitle}>Mission</h1>
 					<p className={styles.contentText}>
-						We provide a supportive and positive learning experience in
-						whichmembers are empowered to develop communication and leadership
+						We provide a supportive and positive learning experience in which
+						members are empowered to develop communication and leadership
 						skills, resulting in greater self-confidence and personal growth.
 					</p>
 					<Button
