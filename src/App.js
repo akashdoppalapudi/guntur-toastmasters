@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Upcomings from "./components/Upcomings/Upcomings";
 import Archives from "./components/Archives/Archives";
 import Contacts from "./components/Contacts/Contacts";
+import NewsLetters from "./components/NewsLetters/NewsLetters";
 import Admin from "./components/Admin/Admin";
 import Login from "./components/Login/Login";
 import styles from "./App.module.css";
@@ -14,6 +15,7 @@ const App = () => {
 	const [currentArchiveId, setCurrentArchiveId] = useState(null);
 	const [currentUpcomingId, setCurrentUpcomingId] = useState(null);
 	const [currentContactId, setCurrentContactId] = useState(null);
+	const [currentNewsLetterId, setCurrentNewsLetterId] = useState(null);
 	const [auth, setAuth] = useState(null);
 
 	return (
@@ -26,6 +28,7 @@ const App = () => {
 						<Route path="/upcoming" exact component={Upcomings} />
 						<Route path="/archives" exact component={Archives} />
 						<Route path="/contact" exact component={Contacts} />
+						<Route path="/news-letters" exact component={NewsLetters} />
 						<Route
 							path="/login"
 							exact
@@ -43,6 +46,8 @@ const App = () => {
 									setCurrentContactId={setCurrentContactId}
 									currentUpcomingId={currentUpcomingId}
 									setCurrentUpcomingId={setCurrentUpcomingId}
+									currentNewsLetterId={currentNewsLetterId}
+									setCurrentNewsLetterId={setCurrentNewsLetterId}
 								/>
 							)}
 						/>

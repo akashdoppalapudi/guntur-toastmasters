@@ -5,6 +5,7 @@ import AdminNavBar from "./AdminNavBar/AdminNavBar";
 import AdminUpcomings from "./AdminUpcomings/AdminUpcomings";
 import AdminArchives from "./AdminArchives/AdminArchives";
 import AdminContacts from "./AdminContacts/AdminContacts";
+import AdminNewsLetters from "./AdminNewsLetters/AdminNewsLetters";
 
 const Admin = ({
 	auth,
@@ -14,6 +15,8 @@ const Admin = ({
 	setCurrentUpcomingId,
 	currentContactId,
 	setCurrentContactId,
+	currentNewsLetterId,
+	setCurrentNewsLetterId,
 }) => {
 	if (!auth) {
 		return <Redirect to="/login" />;
@@ -52,6 +55,17 @@ const Admin = ({
 							auth={auth}
 							currentContactId={currentContactId}
 							setCurrentContactId={setCurrentContactId}
+						/>
+					)}
+				/>
+				<Route
+					path="/admin-news-letters"
+					exact
+					component={() => (
+						<AdminNewsLetters
+							auth={auth}
+							currentNewsLetterId={currentNewsLetterId}
+							setCurrentNewsLetterId={setCurrentNewsLetterId}
 						/>
 					)}
 				/>

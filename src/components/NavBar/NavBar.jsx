@@ -43,6 +43,11 @@ const NavBar = () => {
 							</Link>
 						</Nav.Link>
 						<Nav.Link className={styles.NavLinkContainer} href="#">
+							<Link className={styles.NavLink} to="/news-letters">
+								News
+							</Link>
+						</Nav.Link>
+						<Nav.Link className={styles.NavLinkContainer} href="#">
 							<Link className={styles.NavLink} to="/contact">
 								Contact
 							</Link>

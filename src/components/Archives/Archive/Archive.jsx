@@ -19,19 +19,30 @@ const Archive = ({ archive }) => {
 				<Card.Subtitle>Date: {archive.date}</Card.Subtitle>
 				<Card.Text>{archive.description}</Card.Text>
 				<div className={cardStyles.CardLinks}>
-					<a href={archive.MOMLink} target="_blank" rel="noreferrer noopener">
-						<Button variant="primary">MOM Doc</Button>
-					</a>
-					<a
-						href={archive.agendaLink}
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						<Button variant="primary">More</Button>
-					</a>
-					<a href={archive.videoLink} target="_blank" rel="noreferrer noopener">
-						<Button variant="primary">Watch</Button>
-					</a>
+					{archive.MOMLink && (
+						<a href={archive.MOMLink} target="_blank" rel="noreferrer noopener">
+							<Button variant="primary">MOM Doc</Button>
+						</a>
+					)}
+
+					{archive.agendaLink && (
+						<a
+							href={archive.agendaLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							<Button variant="primary">More</Button>
+						</a>
+					)}
+					{archive.videoLink && (
+						<a
+							href={archive.videoLink}
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							<Button variant="primary">Watch</Button>
+						</a>
+					)}
 				</div>
 			</Card.Body>
 		</Card>

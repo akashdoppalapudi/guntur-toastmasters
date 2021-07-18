@@ -92,7 +92,7 @@ const AdminArchiveForm = ({ currentArchiveId, setCurrentArchiveId }) => {
 						type="url"
 						placeholder="Link to MOM Document"
 						value={archiveData.MOMLink}
-						required={true}
+						required={false}
 						onChange={(e) =>
 							setArchiveData({ ...archiveData, MOMLink: e.target.value })
 						}
@@ -103,7 +103,7 @@ const AdminArchiveForm = ({ currentArchiveId, setCurrentArchiveId }) => {
 						type="url"
 						placeholder="Link to More"
 						value={archiveData.agendaLink}
-						required={true}
+						required={false}
 						onChange={(e) =>
 							setArchiveData({ ...archiveData, agendaLink: e.target.value })
 						}
@@ -114,7 +114,7 @@ const AdminArchiveForm = ({ currentArchiveId, setCurrentArchiveId }) => {
 						type="url"
 						placeholder="Link to Video"
 						value={archiveData.videoLink}
-						required={true}
+						required={false}
 						onChange={(e) =>
 							setArchiveData({ ...archiveData, videoLink: e.target.value })
 						}
