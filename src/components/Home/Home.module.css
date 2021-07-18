@@ -34,6 +34,12 @@
 	flex-direction: row;
 }
 
+.exploreButton {
+	background: #772432;
+	border: 1px solid #772432;
+	padding: 1.5% 2%;
+}
+
 @media only screen and (max-width: 780px) {
 	.contentContainer {
 		margin-top: 45%;
